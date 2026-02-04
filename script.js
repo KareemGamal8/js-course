@@ -1,79 +1,88 @@
-// console.log(3 * 1);
-// console.log(3 * 2);
-// console.log(3 * 3);
-// console.log(3 * 4);
-// console.log(3 * 5);
+// String
+// Double quotes
+// let name = "Kareem"; // string
 
-// Variables
-// var num = 5;
+// Single quote
+// let name2 = 'k'
 
-// console.log(num * 1);
-// console.log(num * 2);
-// console.log(num * 3);
-// console.log(num * 4);
-// console.log(num * 5);
+// new String
+// let name = new String("Kareem")
 
-// var user_name = "Kareem"; // Declaration + Initialization - Assign
+//Special Characters
 
-// var userAgeAndNumber; // Declaration
+// let firstName = "Kareem";
 
-// userAgeAndNumber = 25; //Initialization - Assign
+// let info =
+//   "Lorem ipsum\tdolor sit \\ amet " +
+//   firstName +
+//   "adipisicing elit.\n Quas porro dolore molestias! Beatae repellendus dolorum corporis, officia distinctio magni inventore laborum totam assumenda vero";
 
-// var UserAddress = "Egypt";
+// console.log(info);
 
-// console.log(UserAddress);
+//Concatenation
 
-// var - let - const
+// let lastName = "Gamal";
 
-// 1- Access variable before initialization
-// console.log(x);
+// console.log("Hello," + " " + firstName + " " + lastName);
 
-// var x = 5; // undefined
+// Template literals
 
-// let x = 5; // Reference error
+// let firstName = "Kareem";
 
-// const x = 5; // Reference error
+// let lastName = "Gamal";
 
-// 2- Same variables "Re-declare"
-// var x = 5;
-// var x = 6; // Working
+// console.log(`${firstName} ${lastName}`);
 
-// let x = 6;
-// let x = 7; // Error
+// String methods
 
-// const x = 6;
-// const x = 7; // Error
+// length
+// let name = "Kareem";
 
-// console.log(x);
+// console.log(name.length);
 
-// Re-assign
-// var x = 5;
-// x = 6; // Working
+// Index
+// let name = "Kareem";
 
-// let x = 5;
-// x = 6; // Working
+// // index = char place number - 1
 
-// const x = 5;
-// x = 6; // Error
-// console.log(x);
+// console.log(name[1]);
 
-// Data types
-// Primitive data types
-let a = 5; // number
-let b = "Kareem"; // string
-let c = true; // boolean
-let x = false; // boolean
-let d = undefined; // undefined
-let e = null; // object
+// toUpperCase - toLowerCase
 
-// Reference data types
-let f = ["a", 1, true]; // Array "Object"
-let g = {
-  name: "kareem",
-  age: 25,
-}; // "Object"
-let w = function sum() {
-  console.log(1 + 1);
-}; // Function "object"
+// let name = "Kareem";
 
-console.log(typeof a, typeof b, typeof c, typeof x, typeof d, typeof e);
+// console.log(name.toUpperCase());
+
+// console.log(name.toLowerCase());
+
+// slice - substring
+
+// let name = "Kareem";
+
+// console.log(name.slice(1, 5));
+
+// console.log(name.slice(-4, -1));
+
+// console.log(name.substring(1, 5));
+
+// // String is immutable
+
+// console.log(name);
+
+// replace - replaceAll
+
+// let text = "Please visit Microsoft! Microsoft";
+// let newText = text.replace("Microsoft", "W3Schools");
+// let newText2 = text.replaceAll("Microsoft", "W3Schools");
+
+// console.log(newText);
+// console.log(newText2);
+
+//trim
+
+// let text1 = "      Hello World!      ";
+// let text2 = text1.trim();
+
+// console.log(text2);
+
+
