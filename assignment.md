@@ -1,110 +1,82 @@
-# -------------------String Assignment-----------------
+# 📝 JS Number Assignments
 
-# Assignment 1 – Full Name Formatter
-
-## 🎯Goal:
-
-Use concatenation + template literals.
-
-## 📌Task:
-
-Create variables for first and last name.
-Use concatenation + template literals to print the full name.
-
-## Output example:
-
-Hello Kareem Gamal
+These assignments are based on the topics covered in `script.js`.
 
 ---
 
-# Assignment 2 – Price Formatter
+# 📝 Assignment 1 – Math Mastery
 
-## 🎯Goal:
+## 🎯 Goal:
 
-Practice trim() + replace()
+Practice mathematical operators and operator precedence.
 
-## 📌Task:
+## 📌 Task:
 
-You are given:
-let price = " 150$ ";
+Solve the following using JavaScript:
 
-### 👉Remove spaces
-
-### 👉Remove $
-
-### 👉Print clean number as string
-
-## Expected output:
-
-150
+1. What is the result of `10 + 20 / 2 * 3`? Explain the order of execution.
+2. Calculate **7 to the power of 4** and print the result.
+3. Find the **remainder** when `27` is divided by `4`.
 
 ---
 
-# 📝Assignment 3 – Word Extractor
+# 📝 Assignment 2 – String to Number
 
-## 🎯Goal:
+## 🎯 Goal:
 
-Practice slice() and substring()
+Practice different ways to convert strings to numbers.
 
-## 📌Task:
+## 📌 Task:
 
-let text = "JavaScript is amazing";
+Given the following variables:
+`let price = "100";`
+`let tax = "15.5";`
 
-## 👉Extract: (using slice or substring)
-
-"JavaScript"
-"amazing"
-
----
-
-# 📝Assignment 4 – Replace Message
-
-## 🎯Goal:
-
-Practice replace() & replaceAll()
-
-## 📌Task:
-
-let message = "Hello Ahmed, Ahmed is learning JS";
-
-### Replace only the first "Ahmed" with "Ali"
-
-### Replace all "Ahmed" with "Ali"
-
-### Print both results in the console.
+1. Convert `price` to a number using the **unary plus (+)** and add `20` to it.
+2. Convert `tax` to a number using **Number()** and add `price` to it.
+3. What happens if you try to convert `"Hello10"` to a number? Show the result.
 
 ---
 
-# 📝Assignment 5 – Character Counter
+# 📝 Assignment 3 – Parsing and Fixing
 
-## 🎯Goal:
+## 🎯 Goal:
 
-Practice length + indexing
+Practice `parseInt()`, `parseFloat()`, and `toFixed()`.
 
-## 📌Task:
+## 📌 Task:
 
-let name = "Kareem";
-
-👉 Print in the console:
-
-### String length
-
-### First character
-
-### Last character
-
-(Hint: use length - 1)
+1. Use a method to extract the integer `20` from the string `"20.55 pixels"`.
+2. Use a method to extract the float `15.5` from the string `"15.5 USD"`.
+3. Given `let salary = 5500.8765;`, format it to show only **2 decimal places** (Expected: `5500.88`).
 
 ---
 
-# ⭐Bonus (Optional – Real world)
+# 📝 Assignment 4 – The Math Object
 
-let userInput = " Hello JS World ";
+## 🎯 Goal:
 
-### Clean it
+Practice rounding methods (`round`, `ceil`, `floor`).
 
-### Convert it to uppercase
+## 📌 Task:
 
-## Expected output:
+Given the variable `let grade = 74.2;`:
 
-HELLO JS WORLD
+1. Use `Math.round()` on `grade` and print the outcome.
+2. Use `Math.ceil()` on `grade` and print the outcome.
+3. Use `Math.floor()` on `grade` and print the outcome.
+4. Explain the difference between `Math.ceil()` and `Math.round()`.
+
+---
+
+# 📝 Assignment 5 – Large Numbers & Randomness
+
+## 🎯 Goal:
+
+Practice `toLocaleString()` and `Math.random()`.
+
+## 📌 Task:
+
+1. Given `let views = 1500000;`, use a method to format this number with commas (Expected: `"1,500,000"`).
+2. Write a single line of code to generate a **random number** between 0 and 1.
+3. **Challenge**: How can you generate a random number between 1 and 10? (Hint: use `Math.random()` and `Math.floor()`).

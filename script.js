@@ -1,88 +1,76 @@
-// String
-// Double quotes
-// let name = "Kareem"; // string
+/**-------------------------------Number------------------------------------------ */
 
-// Single quote
-// let name2 = 'k'
+/**
+ * Mathematical operators
+ * Generate number ways
+ * Number methods "parseInt() - parseFloat() - toFixed()"
+ * Convert string to number
+ * Convert number to string
+ * Number object
+ * Math object "ceil() - floor() - round()"
+ * NaN
+ */
 
-// new String
-// let name = new String("Kareem")
+// ()
+// * /
+// + -
+// console.log(5 + 5 / 2);
 
-//Special Characters
+// Power **
+// console.log(5 ** 3);
 
-// let firstName = "Kareem";
+// Remainder
+// console.log(16 % 5);
+// console.log(15 % 5);
 
-// let info =
-//   "Lorem ipsum\tdolor sit \\ amet " +
-//   firstName +
-//   "adipisicing elit.\n Quas porro dolore molestias! Beatae repellendus dolorum corporis, officia distinctio magni inventore laborum totam assumenda vero";
+// Generate number ways
+// let num = 5;
+// console.log(num);
+// console.log(typeof num);
 
-// console.log(info);
+// let num2 = "5";
+// console.log(num2);
+// console.log(typeof num2);
+// console.log(4 + num2, typeof (4 + num2)); //Concat
+// console.log(4 + Number(num2), typeof (4 + Number(num2)));
+// console.log(10 + num2, typeof (10 + num2)); //Concat
+// console.log(10 + Number(num2), typeof (10 +  Number(num2)));
+// console.log(10 + +num2, typeof (10 + +num2));
+// console.log(10 + Number(num2), typeof (10 + num2));
+// console.log(10 - num2, typeof (10 - num2));
+// console.log(10 * num2, typeof (10 * num2));
+// console.log(10 / num2, typeof (10 / num2));
 
-//Concatenation
+// let num3 = "yty4tyt5trtrtr";
+// // console.log(num3);
+// // console.log(typeof num3);
+// console.log(+num3);
+// console.log(Number(num3),typeof Number(num3));
 
-// let lastName = "Gamal";
+// Number Methods
+// let num = 5.5;
+// let num2 = "5.5";
+// let price = 6587432;
 
-// console.log("Hello," + " " + firstName + " " + lastName);
+// console.log(parseInt(num));
+// console.log(Number.parseInt(num));
+// console.log(parseFloat(num2));
+// console.log(num2.toFixed(2))
+// console.log(num.toFixed(4))
+// console.log(price.toLocaleString());
 
-// Template literals
+// const num = 4.2;
+// const num2 = 4.9;
+// const num3 = 4.01;
+// 1 2 3 4
+// 4.1 => 4
+// 4.2 => 4
+// 4.3 => 4
+// 4.4 => 4
+// 4.5 => 5
 
-// let firstName = "Kareem";
-
-// let lastName = "Gamal";
-
-// console.log(`${firstName} ${lastName}`);
-
-// String methods
-
-// length
-// let name = "Kareem";
-
-// console.log(name.length);
-
-// Index
-// let name = "Kareem";
-
-// // index = char place number - 1
-
-// console.log(name[1]);
-
-// toUpperCase - toLowerCase
-
-// let name = "Kareem";
-
-// console.log(name.toUpperCase());
-
-// console.log(name.toLowerCase());
-
-// slice - substring
-
-// let name = "Kareem";
-
-// console.log(name.slice(1, 5));
-
-// console.log(name.slice(-4, -1));
-
-// console.log(name.substring(1, 5));
-
-// // String is immutable
-
-// console.log(name);
-
-// replace - replaceAll
-
-// let text = "Please visit Microsoft! Microsoft";
-// let newText = text.replace("Microsoft", "W3Schools");
-// let newText2 = text.replaceAll("Microsoft", "W3Schools");
-
-// console.log(newText);
-// console.log(newText2);
-
-//trim
-
-// let text1 = "      Hello World!      ";
-// let text2 = text1.trim();
-
-// console.log(text2);
-
-
+// console.log(Math.round(num));
+// console.log(Math.round(num2));
+// console.log(Math.floor(num2));
+// console.log(Math.ceil(num2));
+// console.log(Math.random());
