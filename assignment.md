@@ -1,6 +1,6 @@
-# 📝 JS Number Assignments
+# � JavaScript Course Assignments
 
-These assignments are based on the topics covered in `script.js`.
+These assignments cover the core fundamentals of JavaScript including Numbers, Strings, Variables, and Logic.
 
 ---
 
@@ -80,3 +80,77 @@ Practice `toLocaleString()` and `Math.random()`.
 1. Given `let views = 1500000;`, use a method to format this number with commas (Expected: `"1,500,000"`).
 2. Write a single line of code to generate a **random number** between 0 and 1.
 3. **Challenge**: How can you generate a random number between 1 and 10? (Hint: use `Math.random()` and `Math.floor()`).
+
+---
+
+# 📝 Assignment 6 – Variables & Constants
+
+## 🎯 Goal:
+
+Understand the difference between `let` and `const`.
+
+## 📌 Task:
+
+1. Declare a variable `userName` using `let` and assign it "Kareem". Change it to "Gamal".
+2. Declare a variable `birthYear` using `const`. Try to change it and observe the error in the console.
+3. Explain why we use `const` for things that shouldn't change.
+
+---
+
+# 📝 Assignment 7 – String Basics & Methods
+
+## 🎯 Goal:
+
+Practice common string methods and template literals.
+
+## 📌 Task:
+
+1. Given `let message = "   I Love JavaScript   ";`:
+   - Remove the extra spaces from both sides.
+   - Convert the whole string to **Uppercase**.
+   - Check if the string **ends with** "SCRIPT".
+2. Use **Template Literals** to print: `The language is JavaScript and it has 10 characters` (Calculate the length dynamically using `.length`).
+
+---
+
+# 📝 Assignment 8 – Comparison Operators
+
+## 🎯 Goal:
+
+Practice comparison logic and the difference between `==` and `===`.
+
+## 📌 Task:
+
+1. Given `let x = 10; let y = "10";`:
+   - What is the result of `x == y`? Why?
+   - What is the result of `x === y`? Why?
+2. Compare two numbers: `20` and `15`. Print `true` if 20 is greater than or equal to 15.
+3. Use the Not operator `!==` to check if `10` is not equal to `20`.
+
+---
+
+# 📝 Assignment 9 – Logical Operators
+
+## 🎯 Goal:
+
+Combine conditions using `&&` (AND), `||` (OR), and `!` (NOT).
+
+## 📌 Task:
+
+1. Write a condition that checks if a number `age` is **greater than 18 AND less than 60**.
+2. Write a condition that checks if a user is an **admin OR a moderator**.
+3. What is the result of `!(10 > 5)`? Explain.
+
+---
+
+# 📝 Assignment 10 – Type Casting & Booleans
+
+## 🎯 Goal:
+
+Understand how JavaScript handles different types in expressions.
+
+## 📌 Task:
+
+1. What is the result of `true + true` and `true + false`? Why does this happen?
+2. Use `isNaN()` to check if the variable `let pass = "12345";` is NOT a number after converting it.
+3. Convert the number `0` and the string `""` to Boolean. What are the results? (Truthy vs Falsy).
