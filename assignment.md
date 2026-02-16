@@ -1,156 +1,82 @@
-# � JavaScript Course Assignments
+# � JavaScript Course - Conditions Assignments
 
-These assignments cover the core fundamentals of JavaScript including Numbers, Strings, Variables, and Logic.
-
----
-
-# 📝 Assignment 1 – Math Mastery
-
-## 🎯 Goal:
-
-Practice mathematical operators and operator precedence.
-
-## 📌 Task:
-
-Solve the following using JavaScript:
-
-1. What is the result of `10 + 20 / 2 * 3`? Explain the order of execution.
-2. Calculate **7 to the power of 4** and print the result.
-3. Find the **remainder** when `27` is divided by `4`.
+These assignments cover JavaScript conditions including `if`, `else`, `else if`, Ternary Operator, and `switch` statements.
 
 ---
 
-# 📝 Assignment 2 – String to Number
+# 📝 Assignment 1 – Basic If Conditions
 
 ## 🎯 Goal:
 
-Practice different ways to convert strings to numbers.
+Practice `if` and `else` statements.
 
 ## 📌 Task:
 
-Given the following variables:
-`let price = "100";`
-`let tax = "15.5";`
-
-1. Convert `price` to a number using the **unary plus (+)** and add `20` to it.
-2. Convert `tax` to a number using **Number()** and add `price` to it.
-3. What happens if you try to convert `"Hello10"` to a number? Show the result.
+1. Write a program that takes a variable `number` and checks if it is **Even** or **Odd**.
+2. Print "Even Number" if it's even, and "Odd Number" if it's odd.
+3. **Challenge**: Use the remainder operator `%` for this.
 
 ---
 
-# 📝 Assignment 3 – Parsing and Fixing
+# 📝 Assignment 2 – Grading System (If, Else If)
 
 ## 🎯 Goal:
 
-Practice `parseInt()`, `parseFloat()`, and `toFixed()`.
+Practice handling multiple conditions.
 
 ## 📌 Task:
 
-1. Use a method to extract the integer `20` from the string `"20.55 pixels"`.
-2. Use a method to extract the float `15.5` from the string `"15.5 USD"`.
-3. Given `let salary = 5500.8765;`, format it to show only **2 decimal places** (Expected: `5500.88`).
+Given a variable `score`:
+
+1. If `score` is 90 or above, print "Excellent".
+2. If `score` is between 80 and 89, print "Very Good".
+3. If `score` is between 70 and 79, print "Good".
+4. If `score` is below 70, print "Keep Trying".
 
 ---
 
-# 📝 Assignment 4 – The Math Object
+# 📝 Assignment 3 – Nested Conditions & Logic
 
 ## 🎯 Goal:
 
-Practice rounding methods (`round`, `ceil`, `floor`).
+Practice logic combinations and nested `if` statements.
 
 ## 📌 Task:
 
-Given the variable `let grade = 74.2;`:
+Create a login system check:
 
-1. Use `Math.round()` on `grade` and print the outcome.
-2. Use `Math.ceil()` on `grade` and print the outcome.
-3. Use `Math.floor()` on `grade` and print the outcome.
-4. Explain the difference between `Math.ceil()` and `Math.round()`.
+1. Create a variable `userRole` (e.g., "admin") and `isLoggedIn` (true/false).
+2. If the user is logged in, check their role:
+   - If they are "admin", print "Welcome Boss".
+   - If they are "user", print "Welcome Member".
+3. If they are NOT logged in, print "Please Log In".
 
 ---
 
-# 📝 Assignment 5 – Large Numbers & Randomness
+# 📝 Assignment 4 – The Ternary Operator
 
 ## 🎯 Goal:
 
-Practice `toLocaleString()` and `Math.random()`.
+Use the shorthand `? :` syntax for conditions.
 
 ## 📌 Task:
 
-1. Given `let views = 1500000;`, use a method to format this number with commas (Expected: `"1,500,000"`).
-2. Write a single line of code to generate a **random number** between 0 and 1.
-3. **Challenge**: How can you generate a random number between 1 and 10? (Hint: use `Math.random()` and `Math.floor()`).
+1. Given `let age = 20;`, write a single line of code using the **Ternary Operator** to check if the user is "Allowed" (18 or older) or "Blocked" (under 18).
+2. Print the result to the console.
 
 ---
 
-# 📝 Assignment 6 – Variables & Constants
+# 📝 Assignment 5 – The Switch Statement
 
 ## 🎯 Goal:
 
-Understand the difference between `let` and `const`.
+Practice using `switch` as an alternative to multiple `if` statements.
 
 ## 📌 Task:
 
-1. Declare a variable `userName` using `let` and assign it "Kareem". Change it to "Gamal".
-2. Declare a variable `birthYear` using `const`. Try to change it and observe the error in the console.
-3. Explain why we use `const` for things that shouldn't change.
-
----
-
-# 📝 Assignment 7 – String Basics & Methods
-
-## 🎯 Goal:
-
-Practice common string methods and template literals.
-
-## 📌 Task:
-
-1. Given `let message = "   I Love JavaScript   ";`:
-   - Remove the extra spaces from both sides.
-   - Convert the whole string to **Uppercase**.
-   - Check if the string **ends with** "SCRIPT".
-2. Use **Template Literals** to print: `The language is JavaScript and it has 10 characters` (Calculate the length dynamically using `.length`).
-
----
-
-# 📝 Assignment 8 – Comparison Operators
-
-## 🎯 Goal:
-
-Practice comparison logic and the difference between `==` and `===`.
-
-## 📌 Task:
-
-1. Given `let x = 10; let y = "10";`:
-   - What is the result of `x == y`? Why?
-   - What is the result of `x === y`? Why?
-2. Compare two numbers: `20` and `15`. Print `true` if 20 is greater than or equal to 15.
-3. Use the Not operator `!==` to check if `10` is not equal to `20`.
-
----
-
-# 📝 Assignment 9 – Logical Operators
-
-## 🎯 Goal:
-
-Combine conditions using `&&` (AND), `||` (OR), and `!` (NOT).
-
-## 📌 Task:
-
-1. Write a condition that checks if a number `age` is **greater than 18 AND less than 60**.
-2. Write a condition that checks if a user is an **admin OR a moderator**.
-3. What is the result of `!(10 > 5)`? Explain.
-
----
-
-# 📝 Assignment 10 – Type Casting & Booleans
-
-## 🎯 Goal:
-
-Understand how JavaScript handles different types in expressions.
-
-## 📌 Task:
-
-1. What is the result of `true + true` and `true + false`? Why does this happen?
-2. Use `isNaN()` to check if the variable `let pass = "12345";` is NOT a number after converting it.
-3. Convert the number `0` and the string `""` to Boolean. What are the results? (Truthy vs Falsy).
+1. Create a variable `dayNumber` (1 to 7).
+2. Using a `switch` statement:
+   - If it's 1, print "Saturday".
+   - If it's 2, print "Sunday".
+   - ... and so on until 7.
+   - Use `default` to handle any other number and print "Invalid Day".

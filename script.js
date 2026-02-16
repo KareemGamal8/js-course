@@ -1,74 +1,61 @@
-/** Comparison Operators */
+/** -------------------------- Conditions -------------------------- */
+// if conditions
+// Switch - case
 
-// let num1 = 10;
+// let studentGrade = 120;
 
-// let num2 = "10";
+// if (studentGrade == 120) {
+//   console.log("Excellent");
+// } else if (studentGrade >= 80) {
+//   console.log("Very good");
+// } else if (studentGrade >= 70) {
+//   console.log("Very good2");
+// } else if (studentGrade >= 60) {
+//   console.log("Very good3");
+// } else if (studentGrade >= 50) {
+//   console.log("Very good4");
+// } else {
+//   console.log("Bad");
+// }
 
-// console.log(num1 > num2); // Greater than
-// console.log(num1 < num2); // Less than
-// console.log(num1 == num2); // Equal to => By value => true
-// console.log(num1 === num2); // Triple equal => By value & type
+// let isPassed = "passed";
 
-// console.log(num1 >= num2); // Greater than or equal
-// console.log(num1 <= num2); // Less than or equal
-// ----------------------------------------------------------------------
-/** Logical Operators */
+// switch (isPassed) {
+//   case "passed":
+//     console.log("Very good");
+//     break;
+//   case "failed":
+//     console.log("Bad");
+//     break;
+//   default:
+//     console.log("Hello");
+// }
 
-// let num1 = 6;
+// let studentGrade = 70;
 
-// And operator (&&)
-// console.log(num1 > 5 && num1 < 10 && num1 > 0);
-// console.log(num1 > 5 && num1 >= 10 && num1 >= 6);
+// switch (true) {
+//   case studentGrade >= 80:
+//     console.log("Very good");
+//     break;
+//   case studentGrade >= 70:
+//     console.log("Very good2");
+//     break;
+//   default:
+//     console.log("Bad");
+// }
 
-//  num1 > 5 => true
-//  num1 < 10 => true
-//  num1 > 0 => true
+// const num = 5;
 
-// Or operator (||)
-// let num1 = 6;
-// console.log(num1 > 5 || num1 < 10 || num1 > 0);
-// console.log(num1 > 7 || num1 >= 10 || num1 == 6);
+// console.log(2 * num, num);
 
-//  num1 > 7 => false
-//  num1 >= 10 => false
-//  num1 == 6 => true
+// num = 10;
 
-// Not operator (!)
+// console.log(2 * num, num);
 
-// let num1 = 6;
-// let num2 = "6";
-// // console.log(num1 != num2);
-// console.log(num1 !== num2);
-// ----------------------------------------------------------------------
+// console.log(userName);
 
-/** Type Casting */
+// const birthYear = 2001;
 
-// let num2 = "6";
-// console.log(Number(num2))
-// console.log(+num2)
+// birthYear = 20000; // Error => Reassign
 
-// let num2 = "6";
-
-// console.log(String(num2), typeof String(num2));
-
-// console.log(true + true);
-
-// // true => 1
-// // false => 0
-
-// console.log(true + false);
-
-// let num2 = "trtrtr";
-
-// console.log(isNaN("yytytyt"));
-
-// NaN => Not a Number
-// isNaN => is not a number ?
-
-// let password = 1234567;
-
-// console.log(!isNaN(password));
-
-// Number
-// String
-// Boolean
+// console.log(birthYear);
