@@ -1,6 +1,6 @@
 # � JavaScript Course - Conditions Assignments
 
-These assignments cover JavaScript conditions including `if`, `else`, `else if`, Ternary Operator, and `switch` statements.
+These assignments cover JavaScript conditions and loops, including `if`, `else`, `else if`, Ternary Operator, `switch` statements, `for` loops, and `while` loops.
 
 ---
 
@@ -53,20 +53,7 @@ Create a login system check:
 
 ---
 
-# 📝 Assignment 4 – The Ternary Operator
-
-## 🎯 Goal:
-
-Use the shorthand `? :` syntax for conditions.
-
-## 📌 Task:
-
-1. Given `let age = 20;`, write a single line of code using the **Ternary Operator** to check if the user is "Allowed" (18 or older) or "Blocked" (under 18).
-2. Print the result to the console.
-
----
-
-# 📝 Assignment 5 – The Switch Statement
+# 📝 Assignment 4 – The Switch Statement
 
 ## 🎯 Goal:
 
@@ -80,3 +67,58 @@ Practice using `switch` as an alternative to multiple `if` statements.
    - If it's 2, print "Sunday".
    - ... and so on until 7.
    - Use `default` to handle any other number and print "Invalid Day".
+
+---
+
+# 📝 Assignment 5 – For loops
+
+## 🎯 Goal:
+
+Practice writing basic `for` loops.
+
+## 📌 Task:
+
+1. Write a `for` loop that prints the numbers from 1 to 10.
+2. Inside the loop, log the result of `2 * i`.
+3. Try doing a reverse loop counting down from 10 to 1 and print it backward.
+
+---
+
+# 📝 Assignment 6 – Break and Continue Statements
+
+## 🎯 Goal:
+
+Understand how to skip or stop loops.
+
+## 📌 Task:
+
+1. Write a `for` loop from 1 to 15.
+2. If the number is 7, skip it using `continue` and do not print it.
+3. If the number is 12, stop the loop entirely using `break`.
+
+---
+
+# 📝 Assignment 7 – Even Numbers with Loops
+
+## 🎯 Goal:
+
+Combine loops with logical conditions.
+
+## 📌 Task:
+
+1. Write a `for` loop from 1 to 20 that only prints out the **Even** numbers.
+2. Use the modulus operator `%` combined with an `if` statement to check if the number is even.
+
+---
+
+# 📝 Assignment 8 – While and Do...While Loops
+
+## 🎯 Goal:
+
+Practice with different loop structures.
+
+## 📌 Task:
+
+1. Write a loop to evaluate the multiplication of 2 (up to 10) using a `while` loop syntax.
+2. Print the final results using a `do...while` loop.
+3. Observe how the initialization, condition, and increment rules work for these loops compared to `for`.
