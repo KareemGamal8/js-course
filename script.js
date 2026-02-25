@@ -1,122 +1,69 @@
 /** -------------------------- Loops -------------------------- */
+// Array
+// length
+// push() - unshift()
+// pop() - shift()
+// sort() - reverse()
+// fill()
 
-// DRY => Don't Repeat Yourself
+// let num1 = 1,
+//   num2 = 2,
+//   num3 = 3,
+//   num4 = 4;
 
-// console.log(2 * 1); // +1
-// console.log(2 * 2); // +1
-// console.log(2 * 3); // +1
-// console.log(2 * 4); // +1
-// console.log(2 * 5); // +1
-// console.log(2 * 6);
-// console.log(2 * 7);
-// console.log(2 * 8);
-// console.log(2 * 9);
-// console.log(2 * 10);
+// let numbers = [5, 3, 6, 11, 22, 6, 21];
+/////Index      // 0  1  2  3   4   5   6
+/////Length     // 1  2  3  4   5   6   7
+// let numbers = new Array(1, 2, 3, 4);
 
-// let i = 1; // Initialization
+// console.log(numbers);
 
-// i = i + 1; // Increment
+// console.log(numbers.length);
 
-// i <= 10; // Condition
+// console.log(numbers[1])
 
-// for...loop
+// console.log("Index", numbers.length - 1);
 
-// for (let i = 1; i <= 10; i += 1) {
-//   console.log(2 * i);
+// console.log("Item", numbers[numbers.length - 1]);
+
+// Initial => let i = 0
+
+// Condition => i < numbers.length
+
+// Increment => i++
+
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i] + 2);
 // }
 
-// i = 1 => true => 2 * 1 = 2 => Done => Increment
-// i = 2 => true => 2 * 2 = 4 => Done => Increment
-// i = 3 => true => 2 * 3 = 6 => Done => Increment
-// i = 4 => true => 2 * 4 = 8 => Done => Increment
-// i = 10 => true => 2 * 10 = 20 => Done
+// let numbers = [5, 3, 6, 11, 22, 6, 21];
 
-// let i = 10;
+// push() - unshift() // Insert - Add
+// numbers.push(15, 17, 12, 3)
+// console.log(numbers);
 
-// i = i - 1; // Decrement
+// numbers.unshift(15, 16, "Kareem", true);
+// console.log(numbers);
 
-// i >= 1;
+// pop() - shift() // Remove - Delete
+// let removedElement = numbers.pop();
+// console.log(removedElement);
+// console.log(numbers);
 
-// for (let i = 10; i >= 1; i -= 1) {
-//   console.log(2 * i, "======", i);
-// }
+// let removedElement = numbers.shift();
+// console.log(removedElement);
+// console.log(numbers);
 
-// let num = 2;
+// sort() - reverse()
+// let numbers = [5, 3, 6, 11, 22, 6, 21];
 
-// num = num + 1;
+// console.log(numbers.sort((a, b) => b - a));
 
-// num += 1; // num = num +1
-// num += 2; // num = num +1
+// console.log(numbers.reverse());
 
-// console.log(num++);
-// console.log(num);
+// fill()
+// let numbers = [5, 3, 6, 11, 22, 6, 21];
 
-// let num = 2;
+// numbers.fill("A", 3, 4);
 
-// num = num + 1;
-
-// num += 1;
-
-// num--;
-// num++;
-
-// console.log(num);
-
-// for (let i = 1; i <= 10; i += 1) {
-//   if (i > 5) {
-//     break;
-//   }
-
-//   console.log(2 * i, "=========", i);
-// }
-
-// for (let i = 1; i <= 10; i += 1) {
-//   if (i === 5) {
-//     continue;
-//   }
-
-//   console.log(2 * i, "-----------", i);
-// }
-
-// break => stop
-// continue => skip
-
-// for (let i = 1; i <= 30; i++) {
-//   if (i % 2 === 0) {
-//     console.log(i);
-//   }
-// }
-
-// console.log(3 % 2); // 1
-// console.log(2 % 2); // 0
-
-// 3 % 2 => 3 - 1 = 2 => 2/ 2 = 1 => 1
-
-// while - do...while
-// let i = 1; // Initialization
-
-// while (i <= 10) {
-//   console.log(i * 2);
-//   i++;
-// }
-
-// do {
-//   console.log(i * 2);
-//   i++;
-// } while (i <= 10);
-
-let num = 4;
-
-// if (num === 5) {
-//   console.log("Hello");
-// } else if (num === 4) {
-//   console.log("Welcome");
-// } else {
-//   console.log("Hola");
-// }
-
-// num === 5
-//   ? console.log("Hello")
-//   : num === 4
-//     ? console.log("Welcome")
-//     : console.log("Hola");
+// console.log(numbers);

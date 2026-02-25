@@ -1,124 +1,90 @@
-# � JavaScript Course - Conditions Assignments
+# 📝 JavaScript Course - Arrays Assignments
 
-These assignments cover JavaScript conditions and loops, including `if`, `else`, `else if`, Ternary Operator, `switch` statements, `for` loops, and `while` loops.
-
----
-
-# 📝 Assignment 1 – Basic If Conditions
-
-## 🎯 Goal:
-
-Practice `if` and `else` statements.
-
-## 📌 Task:
-
-1. Write a program that takes a variable `number` and checks if it is **Even** or **Odd**.
-2. Print "Even Number" if it's even, and "Odd Number" if it's odd.
-3. **Challenge**: Use the remainder operator `%` for this.
+These assignments cover JavaScript arrays, including creation, accessing elements, adding/removing elements, and basic iteration.
 
 ---
 
-# 📝 Assignment 2 – Grading System (If, Else If)
+# 📝 Assignment 1 – Array Basics and Element Access
 
 ## 🎯 Goal:
 
-Practice handling multiple conditions.
+Practice creating arrays and accessing their elements.
 
 ## 📌 Task:
 
-Given a variable `score`:
-
-1. If `score` is 90 or above, print "Excellent".
-2. If `score` is between 80 and 89, print "Very Good".
-3. If `score` is between 70 and 79, print "Good".
-4. If `score` is below 70, print "Keep Trying".
+1. Create an array `friends` with 3 names.
+2. Log the entire array to the console.
+3. Log the first name using index `0`.
+4. Log the last name dynamically using the `length` property.
 
 ---
 
-# 📝 Assignment 3 – Nested Conditions & Logic
+# 📝 Assignment 2 – Array Methods (Add & Remove)
 
 ## 🎯 Goal:
 
-Practice logic combinations and nested `if` statements.
+Practice modifying arrays using built-in methods.
 
 ## 📌 Task:
 
-Create a login system check:
-
-1. Create a variable `userRole` (e.g., "admin") and `isLoggedIn` (true/false).
-2. If the user is logged in, check their role:
-   - If they are "admin", print "Welcome Boss".
-   - If they are "user", print "Welcome Member".
-3. If they are NOT logged in, print "Please Log In".
+1. Create an array `cars` with `["BMW", "Audi"]`.
+2. Add `"Mercedes"` to the **end** of the array.
+3. Add `"Toyota"` to the **beginning** of the array.
+4. Remove the **last** brand and log the removed item.
+5. Log the final array to see the changes.
 
 ---
 
-# 📝 Assignment 4 – The Switch Statement
+# 📝 Assignment 3 – Iterating Through Arrays
 
 ## 🎯 Goal:
 
-Practice using `switch` as an alternative to multiple `if` statements.
+Combine arrays and `for` loops to iterate over data.
 
 ## 📌 Task:
 
-1. Create a variable `dayNumber` (1 to 7).
-2. Using a `switch` statement:
-   - If it's 1, print "Saturday".
-   - If it's 2, print "Sunday".
-   - ... and so on until 7.
-   - Use `default` to handle any other number and print "Invalid Day".
+1. Create an array `scores` containing 5 different numbers `[5, 3, 6, 11, 22]`.
+2. Write a `for` loop that runs from `0` to the length of the array.
+3. Inside the loop, print each score increased by `5`.
 
 ---
 
-# 📝 Assignment 5 – For loops
+# 📝 Assignment 4 – Sorting and Reversing Arrays
 
 ## 🎯 Goal:
 
-Practice writing basic `for` loops.
+Practice ordering array elements using built-in methods.
 
 ## 📌 Task:
 
-1. Write a `for` loop that prints the numbers from 1 to 10.
-2. Inside the loop, log the result of `2 * i`.
-3. Try doing a reverse loop counting down from 10 to 1 and print it backward.
+1. Create an array of random numbers: `[5, 3, 6, 11, 22, 6, 21]`.
+2. Sort the array in descending order and log it to the console.
+3. Use the `reverse()` method on the same array and log the result.
 
 ---
 
-# 📝 Assignment 6 – Break and Continue Statements
+# 📝 Assignment 5 – Filling Arrays
 
 ## 🎯 Goal:
 
-Understand how to skip or stop loops.
+Practice replacing or filling array elements using `fill()`.
 
 ## 📌 Task:
 
-1. Write a `for` loop from 1 to 15.
-2. If the number is 7, skip it using `continue` and do not print it.
-3. If the number is 12, stop the loop entirely using `break`.
+1. Create an array `letters` with 5 random letters.
+2. Use the `fill()` method to replace the elements from index 2 to 4 with the letter `"A"`.
+3. Log the array to the console to verify the changes.
 
 ---
 
-# 📝 Assignment 7 – Even Numbers with Loops
+# 📝 Assignment 6 – The Array Constructor and Mixed Types
 
 ## 🎯 Goal:
 
-Combine loops with logical conditions.
+Practice alternative ways to create arrays and storing different data types.
 
 ## 📌 Task:
 
-1. Write a `for` loop from 1 to 20 that only prints out the **Even** numbers.
-2. Use the modulus operator `%` combined with an `if` statement to check if the number is even.
-
----
-
-# 📝 Assignment 8 – While and Do...While Loops
-
-## 🎯 Goal:
-
-Practice with different loop structures.
-
-## 📌 Task:
-
-1. Write a loop to evaluate the multiplication of 2 (up to 10) using a `while` loop syntax.
-2. Print the final results using a `do...while` loop.
-3. Observe how the initialization, condition, and increment rules work for these loops compared to `for`.
+1. Create an array using the constructor: `new Array(1, 2, 3, 4)` and log it to the console.
+2. Use `unshift()` to add a string and a boolean value (e.g., `"Kareem"`, `true`) to the beginning of the array.
+3. Log the final array and its `length` to the console.
