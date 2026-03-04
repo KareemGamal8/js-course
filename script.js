@@ -1,69 +1,101 @@
-/** -------------------------- Loops -------------------------- */
-// Array
-// length
-// push() - unshift()
-// pop() - shift()
-// sort() - reverse()
-// fill()
+/** -------------------------- Functions -------------------------- */
 
-// let num1 = 1,
-//   num2 = 2,
-//   num3 = 3,
-//   num4 = 4;
-
-// let numbers = [5, 3, 6, 11, 22, 6, 21];
-/////Index      // 0  1  2  3   4   5   6
-/////Length     // 1  2  3  4   5   6   7
-// let numbers = new Array(1, 2, 3, 4);
-
-// console.log(numbers);
-
-// console.log(numbers.length);
-
-// console.log(numbers[1])
-
-// console.log("Index", numbers.length - 1);
-
-// console.log("Item", numbers[numbers.length - 1]);
-
-// Initial => let i = 0
-
-// Condition => i < numbers.length
-
-// Increment => i++
-
-// for (let i = 0; i < numbers.length; i++) {
-//   console.log(numbers[i] + 2);
+// // Definition
+// function printHello() {
+//   console.log("Hello User");
 // }
 
-// let numbers = [5, 3, 6, 11, 22, 6, 21];
+// // Call
+// printHello();
 
-// push() - unshift() // Insert - Add
-// numbers.push(15, 17, 12, 3)
-// console.log(numbers);
+// function printUserName(name) {
+//   console.log(name);
+//   console.log("Hello " + name);
+//   console.log("=====================");
+// }
 
-// numbers.unshift(15, 16, "Kareem", true);
-// console.log(numbers);
+// printUserName("Kareem");
+// printUserName("Ahmed");
+// printUserName("Hassan");
 
-// pop() - shift() // Remove - Delete
-// let removedElement = numbers.pop();
-// console.log(removedElement);
-// console.log(numbers);
+// Definition => Parameters
+// Call => Arguments
 
-// let removedElement = numbers.shift();
-// console.log(removedElement);
-// console.log(numbers);
+// Regular function
+// function sumTwoNumbers(num1, num2, num3) {
+//   //   console.log(num1, num2, num3);
+//   console.log(num1 + num2);
+// }
 
-// sort() - reverse()
-// let numbers = [5, 3, 6, 11, 22, 6, 21];
+// Anonymous function
+// let sumTwoNumbers = function (num1, num2, num3) {
+//   console.log(num1, num2, num3);
+//   console.log(num1 + num2);
+// };
 
-// console.log(numbers.sort((a, b) => b - a));
+// sumTwoNumbers(2, 10);
+// sumTwoNumbers(4, 7);
+// sumTwoNumbers(29, 30);
 
-// console.log(numbers.reverse());
+// Return value
+// function sumTwoNumbers(num1, num2) {
+//   return num1 + num2;
+// }
 
-// fill()
-// let numbers = [5, 3, 6, 11, 22, 6, 21];
+// function multiply() {
+//   console.log(sumTwoNumbers(2, 5) * 2);
+// }
 
-// numbers.fill("A", 3, 4);
+// multiply();
 
-// console.log(numbers);
+/**
+ * Call multiply
+ * console
+ * sumTwoNumbers(2, 5) => return => return something (num1 + num2) => (2 + 5) => 7
+ * 7 * 2
+ * 14
+ */
+
+/**
+ * Need user age
+ * Check user age
+ * If user age greater than or equal to 18 => Show "Welcome" in the console
+ * else => Show "Too young" in the console
+ */
+
+// Check user age => Done
+// Need user age => Done
+// function checkUserAge(userAge) {
+//   // If user age greater than or equal to 18 => Show "Welcome" in the console => Done
+//   if (userAge >= 18) {
+//     return "Welcome";
+//     // else => Show "Too young" in the console => Done
+//   } else {
+//     return "Too Young";
+//   }
+// }
+
+// console.log(checkUserAge(16));
+
+/**
+ * Need products prices
+ * Check expensive prices
+ * Loop
+ * If price greater than 300 => prices
+ */
+
+// Need products prices => Done
+
+// let expensivePrices = [];
+
+// function getExpensivePrices(productsPrices) {
+//   for (let i = 0; i < productsPrices.length; i++) {
+//     if (productsPrices[i] > 300) {
+//       expensivePrices.push(productsPrices[i]);
+//     }
+//   }
+
+//   return expensivePrices;
+// }
+
+// console.log(getExpensivePrices([100, 200, 350, 150, 700, 800]));
