@@ -1,101 +1,155 @@
-/** -------------------------- Functions -------------------------- */
+/** -------------------------- Object -------------------------- */
 
-// // Definition
-// function printHello() {
-//   console.log("Hello User");
-// }
+let usersNames = ["Kareem", "Ahmed", "Mohamed"];
 
-// // Call
-// printHello();
+// let userAges = [25, 24, 32];
 
-// function printUserName(name) {
-//   console.log(name);
-//   console.log("Hello " + name);
-//   console.log("=====================");
-// }
+// let usersCities = ["Luxor", "Egypt", "Alex"];
 
-// printUserName("Kareem");
-// printUserName("Ahmed");
-// printUserName("Hassan");
+// let user1Name = "Kareem";
 
-// Definition => Parameters
-// Call => Arguments
+// let user1Age = 25;
 
-// Regular function
-// function sumTwoNumbers(num1, num2, num3) {
-//   //   console.log(num1, num2, num3);
-//   console.log(num1 + num2);
-// }
+// let user1City = "Luxor";
 
-// Anonymous function
-// let sumTwoNumbers = function (num1, num2, num3) {
-//   console.log(num1, num2, num3);
-//   console.log(num1 + num2);
+// let user = {
+//   name: "Kareem", // Property
+//   age: 25,
+//   city: "Luxor",
 // };
 
-// sumTwoNumbers(2, 10);
-// sumTwoNumbers(4, 7);
-// sumTwoNumbers(29, 30);
-
-// Return value
-// function sumTwoNumbers(num1, num2) {
-//   return num1 + num2;
+// obj = {
+//     key: value // Property
 // }
 
-// function multiply() {
-//   console.log(sumTwoNumbers(2, 5) * 2);
+// console.log(user);
+
+// // Dot notation
+// console.log(user.name, user.age, user.city);
+
+// // Bracket notation
+// console.log(user["name"], user["age"], user["city"]);
+
+// Array of objects
+// let users = [
+//   {
+//     name: "Kareem",
+//     age: 25,
+//     city: "Luxor",
+//   },
+//   {
+//     name: "Ahmed",
+//     age: 23,
+//     city: "Cairo",
+//   },
+//   {
+//     name: "Mohamed",
+//     age: 26,
+//     city: "Alex",
+//   },
+// ];
+
+// console.log(users[1].name);
+
+// console.log(users[1]["name"]);
+
+// let product = {
+//   name: "Samsung",
+//   category: "Mobile",
+//   price: 3000,
+// };
+
+// function getProduct(product) {
+//   console.log("Product =>", product.name, product.category, product.price);
 // }
 
-// multiply();
+// getProduct(product);
 
-/**
- * Call multiply
- * console
- * sumTwoNumbers(2, 5) => return => return something (num1 + num2) => (2 + 5) => 7
- * 7 * 2
- * 14
- */
+// Add new property
+// product.discount = 10;
+// product["discount"] = 10;
 
-/**
- * Need user age
- * Check user age
- * If user age greater than or equal to 18 => Show "Welcome" in the console
- * else => Show "Too young" in the console
- */
+// Edit property
+// product.name = "Oppo";
+// product["name"] = "Oppo";
 
-// Check user age => Done
-// Need user age => Done
-// function checkUserAge(userAge) {
-//   // If user age greater than or equal to 18 => Show "Welcome" in the console => Done
-//   if (userAge >= 18) {
-//     return "Welcome";
-//     // else => Show "Too young" in the console => Done
-//   } else {
-//     return "Too Young";
-//   }
+// console.log(product);
+// console.log(product.name);
+
+// console.log(usersNames.length);
+
+// console.log(usersNames.join(" "));
+
+// console.log(typeof usersNames);
+
+// let product = {
+//   name: "Samsung", // Property
+//   category: "Mobile",
+//   price: 3000,
+//   //   getProductDetails: function () {
+//   //     console.log(
+//   //       `Product name: ${product.name} - Product category: ${product.category} - Product price: ${product.price}`,
+//   //     );
+//   //   }, // Method,
+//   getProductDetails() {
+//     console.log(
+//       `Product name: ${product.name} - Product category: ${product.category} - Product price: ${product.price}`,
+//     );
+//   },
+// };
+
+// console.log(product.name);
+// product.getProductDetails();
+
+// let products = [
+//   {
+//     name: "Samsung",
+//     category: "Mobile",
+//     price: 3000,
+//   },
+//   {
+//     name: "Jacket",
+//     category: "Clothes",
+//     price: 1000,
+//   },
+//   {
+//     name: "Keyboard",
+//     category: "Electronics",
+//     price: 500,
+//   },
+// ];
+
+// for (let i = 0; i < products.length; i++) {
+//   console.log(products[i].category);
 // }
 
-// console.log(checkUserAge(16));
+// Array => List of items
+// Object => Single item
 
-/**
- * Need products prices
- * Check expensive prices
- * Loop
- * If price greater than 300 => prices
- */
+// Products => Array
+// Single product => object
 
-// Need products prices => Done
+// let product = {
+//   name: "Samsung",
+//   category: "Mobile",
+//   price: 3000,
+// };
 
-// let expensivePrices = [];
+// let objectKey = "name";
 
-// function getExpensivePrices(productsPrices) {
-//   for (let i = 0; i < productsPrices.length; i++) {
-//     if (productsPrices[i] > 300) {
-//       expensivePrices.push(productsPrices[i]);
-//     }
-//   }
+// console.log(product.name);
+// console.log(product["name"]);
+// console.log(product[objectKey]);
+// console.log(product.objectKey);
 
-//   return expensivePrices;
-// }
+// let square = function (n) {
+//   return n * n;
+// };
 
-// console.log(getExpensivePrices([100, 200, 350, 150, 700, 800]));
+// console.log(square(5));
+
+function calculateRectangleArea(width, height) {
+  return width * height;
+}
+
+console.log(calculateRectangleArea(12, 6));
