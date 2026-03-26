@@ -1,155 +1,38 @@
-/** -------------------------- Object -------------------------- */
+/** -------------------------- DOM -------------------------- */
 
-let usersNames = ["Kareem", "Ahmed", "Mohamed"];
+// Document Object Model
 
-// let userAges = [25, 24, 32];
+// let title = document.querySelector("h1");
+// let section = document.querySelector("div");
+// // let text = document.querySelector("p");
 
-// let usersCities = ["Luxor", "Egypt", "Alex"];
+// title.innerText = "Hello, World!";
+// title.style.color = "red";
+// title.style.fontSize = "32px";
+// section.innerHTML = "<h1>Hello</h1>";
+// document.dir = "ltr";
 
-// let user1Name = "Kareem";
+// Target elements => Done
+let btnIncrement = document.querySelector("button");
+let btnDecrement = document.getElementById("btn-decrement");
+let title = document.getElementsByClassName("title");
 
-// let user1Age = 25;
+// New variable for the number => Done
+let num = 0;
 
-// let user1City = "Luxor";
+// Add this number to title => Done
+title[0].innerHTML = num;
 
-// let user = {
-//   name: "Kareem", // Property
-//   age: 25,
-//   city: "Luxor",
-// };
+// When click on Button, increase the number
+btnIncrement.addEventListener("click", function () {
+  num++;
+  title[0].innerHTML = num;
+});
 
-// obj = {
-//     key: value // Property
-// }
-
-// console.log(user);
-
-// // Dot notation
-// console.log(user.name, user.age, user.city);
-
-// // Bracket notation
-// console.log(user["name"], user["age"], user["city"]);
-
-// Array of objects
-// let users = [
-//   {
-//     name: "Kareem",
-//     age: 25,
-//     city: "Luxor",
-//   },
-//   {
-//     name: "Ahmed",
-//     age: 23,
-//     city: "Cairo",
-//   },
-//   {
-//     name: "Mohamed",
-//     age: 26,
-//     city: "Alex",
-//   },
-// ];
-
-// console.log(users[1].name);
-
-// console.log(users[1]["name"]);
-
-// let product = {
-//   name: "Samsung",
-//   category: "Mobile",
-//   price: 3000,
-// };
-
-// function getProduct(product) {
-//   console.log("Product =>", product.name, product.category, product.price);
-// }
-
-// getProduct(product);
-
-// Add new property
-// product.discount = 10;
-// product["discount"] = 10;
-
-// Edit property
-// product.name = "Oppo";
-// product["name"] = "Oppo";
-
-// console.log(product);
-// console.log(product.name);
-
-// console.log(usersNames.length);
-
-// console.log(usersNames.join(" "));
-
-// console.log(typeof usersNames);
-
-// let product = {
-//   name: "Samsung", // Property
-//   category: "Mobile",
-//   price: 3000,
-//   //   getProductDetails: function () {
-//   //     console.log(
-//   //       `Product name: ${product.name} - Product category: ${product.category} - Product price: ${product.price}`,
-//   //     );
-//   //   }, // Method,
-//   getProductDetails() {
-//     console.log(
-//       `Product name: ${product.name} - Product category: ${product.category} - Product price: ${product.price}`,
-//     );
-//   },
-// };
-
-// console.log(product.name);
-// product.getProductDetails();
-
-// let products = [
-//   {
-//     name: "Samsung",
-//     category: "Mobile",
-//     price: 3000,
-//   },
-//   {
-//     name: "Jacket",
-//     category: "Clothes",
-//     price: 1000,
-//   },
-//   {
-//     name: "Keyboard",
-//     category: "Electronics",
-//     price: 500,
-//   },
-// ];
-
-// for (let i = 0; i < products.length; i++) {
-//   console.log(products[i].category);
-// }
-
-// Array => List of items
-// Object => Single item
-
-// Products => Array
-// Single product => object
-
-// let product = {
-//   name: "Samsung",
-//   category: "Mobile",
-//   price: 3000,
-// };
-
-// let objectKey = "name";
-
-// console.log(product.name);
-// console.log(product["name"]);
-// console.log(product[objectKey]);
-// console.log(product.objectKey);
-
-// let square = function (n) {
-//   return n * n;
-// };
-
-// console.log(square(5));
-
-function calculateRectangleArea(width, height) {
-  return width * height;
-}
-
-console.log(calculateRectangleArea(12, 6));
+// When click on Button, Decrease the number
+btnDecrement.addEventListener("click", function () {
+  if (num > 0) {
+    num--;
+    title[0].innerHTML = num;
+  }
+});

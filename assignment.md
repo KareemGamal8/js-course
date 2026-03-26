@@ -1,93 +1,80 @@
 
-# 📝 JavaScript Course - Objects Assignments
+# 📝 JavaScript Course - DOM Assignments
 
-These assignments cover JavaScript objects, including creation, property access, modification, methods, and iterating through arrays of objects.
+These assignments cover Document Object Model (DOM) basics, including selecting elements, modifying content, event listeners, and simple interactivity.
 
 ---
 
-# 📝 Assignment 1 – Basic Object Creation & Access
+# 📝 Assignment 1 – Selecting Elements
 
 ## 🎯 Goal:
-
-Practice creating a simple object and accessing its properties.
+Practice targeting HTML elements using different DOM methods.
 
 ## 📌 Task:
-
-1. Create an object named `car` with three properties: `brand`, `model`, and `year`.
-2. Log the `brand` of the car to the console using **dot notation**.
-3. Log the `model` of the car to the console using **bracket notation**.
+1. Use `document.querySelector()` to select a button.
+2. Use `document.getElementById()` to select an element with the ID `btn-decrement`.
+3. Use `document.getElementsByClassName()` to select elements with the class `title`.
+4. Log all selected elements to the console.
 
 ---
 
-# 📝 Assignment 2 – Adding and Updating Properties
+# 📝 Assignment 2 – Modifying Content
 
 ## 🎯 Goal:
-
-Learn how to modify objects after they are created.
+Learn how to update the text and HTML content of an element.
 
 ## 📌 Task:
-
-1. Create a `student` object with properties `name` and `age`.
-2. Add a new property `grade` to the object (e.g., `"A"` or `"B"`).
-3. Update the `age` property to a new value.
-4. Log the final `student` object to the console to see the changes.
+1. Target an `h1` element.
+2. Change its `innerText` to `"Hello, JavaScript!"`.
+3. Target a `div` element and use `innerHTML` to add a new `<span>` tag inside it.
 
 ---
 
-# 📝 Assignment 3 – Objects as Function Parameters
+# 📝 Assignment 3 – Changing Styles
 
 ## 🎯 Goal:
-
-Practice passing objects into functions to handle structured data.
+Practice modifying CSS styles dynamically using JavaScript.
 
 ## 📌 Task:
-
-1. Create a function `displayBookInfo` that takes one parameter: a `book` object.
-2. The `book` object should have `title` and `author` properties.
-3. Inside the function, log a message: `"The book [title] was written by [author]"`.
-4. Call the function and pass a sample book object to it.
+1. Target an element using any selection method.
+2. Change its `style.color` to `"blue"`.
+3. Change its `style.fontSize` to `"40px"`.
+4. Hide the element by setting its `style.display` to `"none"`.
 
 ---
 
-# 📝 Assignment 4 – Object Methods
+# 📝 Assignment 4 – Simple Click Event
 
 ## 🎯 Goal:
-
-Understand how to define and use functions (methods) inside an object.
+Understand how to respond to user interactions using event listeners.
 
 ## 📌 Task:
-
-1. Create an object named `userAccount`.
-2. Add a property `userName`.
-3. Add a method (function) named `sayHello` inside the object that logs: `"Hello, [userName]!"`.
-4. Call the `sayHello` method from the object.
+1. Select a button using `querySelector`.
+2. Add a `"click"` event listener to the button.
+3. Inside the event listener function, log `"Button was clicked!"` to the console.
 
 ---
 
-# 📝 Assignment 5 – Array of Objects and Looping
+# 📝 Assignment 5 – Increment Counter
 
 ## 🎯 Goal:
-
-Practice searching through a list of objects.
+Create a dynamic counter that updates the UI.
 
 ## 📌 Task:
-
-1. Create an array named `products` containing 3 objects. Each product should have a `name` and `price`.
-2. Use a `for` loop to iterate through the array.
-3. Inside the loop, if the `price` is **greater than 1000**, log the product's `name` to the console.
+1. Create a variable `num` and set it to 0.
+2. Select a button and a title element.
+3. Display the initial value of `num` inside the title.
+4. Add a click event to the button that increases `num` by 1 and updates the title's content.
 
 ---
 
-# 📝 Assignment 6 – Dynamic Property Access
+# 📝 Assignment 6 – Conditional Decrement
 
 ## 🎯 Goal:
-
-Understand how to access object properties using variables and bracket notation.
+Apply logic to UI updates to control behavior.
 
 ## 📌 Task:
-
-1. Create a `smartphone` object with properties: `brand`, `cameraResolution`, and `storage`.
-2. Declare a variable `query` and set its value to `"storage"`.
-3. Use the `query` variable to log the value of storage from the `smartphone` object using **bracket notation**.
-
----
+1. Create a "Decrement" button.
+2. Add a click event listener that decreases the `num` variable.
+3. Use an `if` statement to ensure `num` never goes below 0.
+4. Update the title element with the new value.
