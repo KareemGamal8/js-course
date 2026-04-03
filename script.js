@@ -1,38 +1,82 @@
-/** -------------------------- DOM -------------------------- */
+// Like button
 
-// Document Object Model
+// let likesBtn = document.getElementById("like-btn");
+// let likesCount = document.getElementById("likes-count");
 
-// let title = document.querySelector("h1");
-// let section = document.querySelector("div");
-// // let text = document.querySelector("p");
+// let count = 0; // Likes number
 
-// title.innerText = "Hello, World!";
-// title.style.color = "red";
-// title.style.fontSize = "32px";
-// section.innerHTML = "<h1>Hello</h1>";
-// document.dir = "ltr";
+// let isLiked = false;
+// // When click button
+// likesBtn.addEventListener("click", function () {
+//   isLiked = !isLiked;
 
-// Target elements => Done
-let btnIncrement = document.querySelector("button");
-let btnDecrement = document.getElementById("btn-decrement");
-let title = document.getElementsByClassName("title");
+//   if (isLiked === true) {
+//     count++;
+//     likesBtn.style.background = "red";
+//   } else {
+//     count--;
+//     likesBtn.style.background = "white";
+//   }
 
-// New variable for the number => Done
-let num = 0;
+//   likesCount.textContent = count;
+// });
 
-// Add this number to title => Done
-title[0].innerHTML = num;
+/**
+ * Click on the button.
+ * Check isLiked;
+ * If isLiked false => isLiked = true / count + 1 => true
+ * If isLiked true => isLiked = false / count - 1 => false
+ */
 
-// When click on Button, increase the number
-btnIncrement.addEventListener("click", function () {
-  num++;
-  title[0].innerHTML = num;
-});
+// Password Toggle
+// let passwordInput = document.querySelector("#password");
 
-// When click on Button, Decrease the number
-btnDecrement.addEventListener("click", function () {
-  if (num > 0) {
-    num--;
-    title[0].innerHTML = num;
-  }
-});
+// let btnToggle = document.querySelector("#toggle");
+
+// btnToggle.addEventListener("click", function () {
+//   if (passwordInput.type === "password") {
+//     passwordInput.type = "text";
+//     btnToggle.innerHTML = "Hide";
+//   } else {
+//     passwordInput.type = "password";
+//     btnToggle.innerHTML = "Show";
+//   }
+// });
+
+// Add To Cart
+// let cartBtn = document.getElementsByClassName("addToCart")[0];
+
+// let countEl = document.getElementsByClassName("count")[0];
+
+// let error = document.getElementById("error");
+
+// let count = 0;
+
+// let productCount = 10;
+
+// cartBtn.addEventListener("click", function () {
+//   if (count < productCount) {
+//     count++;
+//     countEl.textContent = count;
+//   } else {
+//     error.textContent = "You cant add more than " + productCount;
+//   }
+// });
+
+// count = 0 => count = 1
+// count = 1 => count = 2
+// count = 2 => count = 3
+// count = 3 => count = 4
+// count = 4 => count = 5
+
+// User form
+// let form = document.getElementById("form");
+// let username = document.getElementById("username");
+// let userAge = document.getElementById("userAge");
+// let result = document.getElementById("result");
+
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+
+//   result.textContent = `Hello, ${username.value}, Your age is: ${userAge.value}`;
+// });

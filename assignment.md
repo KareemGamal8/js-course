@@ -1,80 +1,76 @@
 
-# 📝 JavaScript Course - DOM Assignments
+# 📝 JavaScript Course - DOM Assignments (Based on script.js)
 
-These assignments cover Document Object Model (DOM) basics, including selecting elements, modifying content, event listeners, and simple interactivity.
-
----
-
-# 📝 Assignment 1 – Selecting Elements
-
-## 🎯 Goal:
-Practice targeting HTML elements using different DOM methods.
-
-## 📌 Task:
-1. Use `document.querySelector()` to select a button.
-2. Use `document.getElementById()` to select an element with the ID `btn-decrement`.
-3. Use `document.getElementsByClassName()` to select elements with the class `title`.
-4. Log all selected elements to the console.
+These assignments cover Document Object Model (DOM) logic found in `script.js`, including toggling states, attribute manipulation, conditional logic, and form handling.
 
 ---
 
-# 📝 Assignment 2 – Modifying Content
+# 📝 Assignment 1 – Toggle State (Like Button)
 
 ## 🎯 Goal:
-Learn how to update the text and HTML content of an element.
+Learn how to toggle a Boolean state and update styles accordingly.
 
 ## 📌 Task:
-1. Target an `h1` element.
-2. Change its `innerText` to `"Hello, JavaScript!"`.
-3. Target a `div` element and use `innerHTML` to add a new `<span>` tag inside it.
+1. Create a "Like" button and a `likesCount` span.
+2. Maintain a `isLiked` variable (boolean) and a `count` variable.
+3. Add a click event:
+    - If `isLiked` is false, set it to true, increment `count`, and change the button background to red.
+    - If `isLiked` is true, set it to false, decrement `count`, and change the button background back to white.
+4. Update the `likesCount` text content.
 
 ---
 
-# 📝 Assignment 3 – Changing Styles
+# 📝 Assignment 2 – Password Visibility Toggle
 
 ## 🎯 Goal:
-Practice modifying CSS styles dynamically using JavaScript.
+Practice manipulating element attributes like `type`.
 
 ## 📌 Task:
-1. Target an element using any selection method.
-2. Change its `style.color` to `"blue"`.
-3. Change its `style.fontSize` to `"40px"`.
-4. Hide the element by setting its `style.display` to `"none"`.
+1. Create a password input field and a "Show" button.
+2. Add a click event to the button.
+3. Check the `type` of the input:
+    - If it is `"password"`, change it to `"text"` and set the button text to `"Hide"`.
+    - Otherwise, change it back to `"password"` and set the button text to `"Show"`.
 
 ---
 
-# 📝 Assignment 4 – Simple Click Event
+# 📝 Assignment 3 – Shopping Cart with Max Limit
 
 ## 🎯 Goal:
-Understand how to respond to user interactions using event listeners.
+Use conditional logic to prevent certain actions and display error messages.
 
 ## 📌 Task:
-1. Select a button using `querySelector`.
-2. Add a `"click"` event listener to the button.
-3. Inside the event listener function, log `"Button was clicked!"` to the console.
+1. Create an "Add To Cart" button and a counter element.
+2. Create an empty `error` paragraph.
+3. Set a `productCount` limit (e.g., 5).
+4. On button click:
+    - If the current count is less than the limit, increment the count and update the UI.
+    - If the limit is reached, display a message in the `error` paragraph: `"You can't add more than X items."`
 
 ---
 
-# 📝 Assignment 5 – Increment Counter
+# 📝 Assignment 4 – Handling Form Submissions
 
 ## 🎯 Goal:
-Create a dynamic counter that updates the UI.
+Understand form events and how to retrieve user input.
 
 ## 📌 Task:
-1. Create a variable `num` and set it to 0.
-2. Select a button and a title element.
-3. Display the initial value of `num` inside the title.
-4. Add a click event to the button that increases `num` by 1 and updates the title's content.
+1. Create an HTML form with `username` and `userAge` inputs and a submit button.
+2. Add a `"submit"` event listener to the form.
+3. Use `event.preventDefault()` to prevent the page from reloading.
+4. Retrieve the values of the inputs and display them in a "Result" element using template literals: `Hello ${name}, your age is ${age}`.
 
 ---
 
-# 📝 Assignment 6 – Conditional Decrement
+# 📝 Assignment 5 – Combining Logic & Styles
 
 ## 🎯 Goal:
-Apply logic to UI updates to control behavior.
+Implement multiple features in a single interactive component.
 
 ## 📌 Task:
-1. Create a "Decrement" button.
-2. Add a click event listener that decreases the `num` variable.
-3. Use an `if` statement to ensure `num` never goes below 0.
-4. Update the title element with the new value.
+1. Combine the logic from previous assignments to create a "Profile Card" toggle.
+2. Add a button that, when clicked:
+    - Changes its own text (e.g., "Follow" to "Following").
+    - Toggles a class or style on a parent container (e.g., changing border color).
+    - Increments a "Follower Count" text element.
+3. Use `console.log()` to debug and confirm the state changes at each step.
