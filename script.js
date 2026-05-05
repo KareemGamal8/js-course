@@ -1,137 +1,148 @@
-/** ---------------------------- BOM ---------------------------- */
-// console.log(window);
+/**
+ * Var / let / const
+ * Arrow Functions
+ * Template Literals
+ * Default Parameters
+ * Short-hand properties
+ * Ternary Operator
+ */
 
-// window.console.log(1);
+/** Var / let / const */
+// 1) Access before initial
+// console.log(x);
+// var x = 5; // undefined
+// let x = 5; // Reference Error
+// const x = 5; // Reference Error
 
-// console.log(1);
+// 2) Redeclare
+// var z = 6;
 
-// alert("Product has been deleted successfully!");
+// var z = 7; => 7
 
-// let confirmProduct = confirm("Are you sure you want to delete this product?");
+// let z = 6;
 
-// console.log(confirmProduct);
+// let z = 7; => Error
 
-// let username = prompt("What is your name?");
+// const z = 6;
 
-// let userAge = prompt("How old are u?");
+// const z = 7; => Error
 
-// console.log(username);
+// console.log(z);
 
-// console.log(1);
+// 3) Re-assign
+// var x = 5;
 
-// setTimeout(function () {
-//   console.log(2);
-// }, 3000);
+// x = 6; => 6
 
-// console.log(3);
+// let x = 5;
 
-// let time = setTimeout(function () {
-//   console.log(2);
-// }, 5000);
+// x = 6; => 6
 
-// clearTimeout(time);
+// const x = 5;
 
-// setInterval(function () {
-//   console.log("Kareem");
-// }, 3000);
+// x = 6; => Error
 
-// let time = setInterval(function () {
-//   console.log(4);
-// }, 3000);
+// console.log(x);
 
-// clearInterval(time);
+// const x = 5;
 
-// second => 1 2 3 4
-// Mille second "ms" => 1 => 1000 , 2 => 2000
+// x = 6;
 
-// console.log(location);
+// const user = { name: "Kareem", age: 24 };
 
-// let reload = window.document.getElementById("reload");
+// user.name = "Ahmed";
 
-// reload.addEventListener("click", function () {
-//   // Location.replace => No back or forward
-//   location.replace("https://www.w3schools.com/html/default.asp");
-//   // Location.assign => back & forward
-//   location.assign("https://www.w3schools.com/html/default.asp");
-// });
+// user.address = "Egypt";
 
-// History
-// console.log(history);
+// user = { name: "Kareem", age: 24, address: "Egypt" }; => Error
 
-// history.forward() // To the next page
-// history.back() // To the prev page
-// history.go() // Numbers (positive + => Forward, negative - => back)
+// { name: "Kareem", age: 24 }
 
-// Local & Session storage
-// let userNameInput = document.getElementById("username");
-// let userAgeInput = document.getElementById("userAge");
-// let addBtn = document.getElementById("add");
-// let welcomeMessage = document.getElementById("welcome");
+// { name: "Kareem", age: 24, address: "Egypt" }
 
-// let message = "";
+// user = { name: "Ahmed", age: 24 };
 
-// if (message) {
-//   welcomeMessage.innerText = message;
+// console.log(user);
+
+/** Arrow function */
+// Regular
+// function sum(a, b) {
+//   console.log(a + b);
 // }
 
-// addBtn.addEventListener("click", function () {
-//   localStorage.setItem("name", userNameInput.value);
-//   localStorage.setItem("age", userAgeInput.value);
-//   message = `Welcome, ${localStorage.getItem("name")}, your age is ${localStorage.getItem("age")}`;
-//   welcomeMessage.innerText = message;
-// });
+// Anonymous
+// const sum = function (a, b) {
+//   console.log(a + b);
+// };
 
-// localStorage.setItem("name", "Kareem");
-// localStorage.setItem("age", 24);
+// Arrow
+// const sum = _ => console.log("Kareem");
 
-// console.log(typeof localStorage.getItem("name"));
+// sum(5);
 
-// console.log(typeof localStorage.getItem("age"));
+/** Template Literals */
 
-// localStorage.setItem("numbers", [1, 2, 3, 4, 5]);
+// let name = "Kareem Gamal";
+// let name = "Kareem";
 
-// console.log(localStorage.getItem("numbers"));
+// let age = 25;
+// Concat
+// console.log("Welcome" + " " + name + " " + "Your age is " + age);
 
-// console.log(typeof localStorage.getItem("numbers"));
+// Template Literals
+// console.log(`Welcome ${name}, Your age is ${age}`);
 
-// localStorage.setItem("product", {
-//   title: "Iphone",
-//   price: 15,
-// });
+/** Default Parameters */
+// const showName = (name = "Kareem", age, address = "Egypt") => {
+//   console.log(`Hello, ${name}, age: ${age}, address: ${address}`);
+// };
 
-// JSON - JavaScript Object Notation
+// showName(undefined, 15);
+// undefined => قيمة غير موجودة
+// null => قيمة فارغة
 
-// localStorage.setItem("numbers", JSON.stringify([1, 2, 3, 4, 5]));
+/** Object Shorthand */
+// const name = "Kareem",
+//   age = 25;
 
-// localStorage.setItem(
-//   "product",
-//   JSON.stringify({
-//     title: "Iphone",
-//     price: 15,
-//   }),
-// );
+// const user = {
+//   name,
+//   age,
+// };
 
-// console.log(localStorage.getItem("product"));
-// console.log(typeof localStorage.getItem("product"));
+// console.log(user);
 
-// let product = JSON.parse(localStorage.getItem("product"));
-// console.log(product);
-// console.log(typeof product);
+/** Ternary Operator */
+// let score = 80;
 
-// let deleteNameBtn = document.querySelectorAll(".delete-name")[0];
+// let result;
 
-// deleteNameBtn.addEventListener("click", function () {
-//   localStorage.removeItem("name");
-// });
+// if (score >= 50 && score < 90) {
+//   console.log("Pass");
+// } else if (score >= 90 && score < 100) {
+//   console.log("Excellent");
+// } else if (score >= 100) {
+//   console.log("So Good");
+// } else {
+//   console.log("Fail");
+// }
 
-// let clearSession = document.querySelectorAll(".clear")[0];
+// score >= 50 && score < 90
+//   ? console.log("Pass")
+//   : score >= 90
+//     ? console.log("Excellent")
+//     : score >= 100
+//       ? console.log("So Good")
+//       : console.log("Fail");
 
-// clearSession.addEventListener("click", function () {
-//   localStorage.clear();
-// });
+// if (score >= 50 && score < 90) {
+//   console.log("Pass");
+// }
 
-let addNameBtn = document.querySelectorAll(".add-name")[0];
+// score >= 50 && score < 90 ? console.log("Pass") : null;
 
-addNameBtn.addEventListener("click", function () {
-  sessionStorage.setItem("name", "Kareem");
-});
+/**
+ * Let, var and const with scopes
+ * Nullish operator
+ * Arrow functions
+ */
