@@ -1,148 +1,65 @@
+/** ================ High Order Functions (HOF) ================ **/
 /**
- * Var / let / const
- * Arrow Functions
- * Template Literals
- * Default Parameters
- * Short-hand properties
- * Ternary Operator
+ * map()
+ * forEach()
+ * filter()
+ * find()
+ * some()
+ * every
  */
 
-/** Var / let / const */
-// 1) Access before initial
-// console.log(x);
-// var x = 5; // undefined
-// let x = 5; // Reference Error
-// const x = 5; // Reference Error
+// Map
+let numbers = [1, 2, 3, 4, 5, 6];
 
-// 2) Redeclare
-// var z = 6;
+let newNumbers = numbers.map((num) => {
+  return num * 2;
+});
 
-// var z = 7; => 7
+console.log(newNumbers);
 
-// let z = 6;
+// const usersDiv = document.getElementById("users");
 
-// let z = 7; => Error
+// const users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Ahmed" },
+//   { id: 3, name: "Kareem" },
+// ];
 
-// const z = 6;
+// usersDiv.innerHTML = users.map((user, index) => {
+//   return `
+//     <div key={${index}>
+//         <h2>${user.id}</h2>
+//         <h2>${user.name}</h2>
+//         <p></p>
+//     </div>
+//     `;
+// });
 
-// const z = 7; => Error
+// forEach
+// const newNumbers = numbers.forEach((num, index) => {
+//   return num * 3;
+// });
 
-// console.log(z);
+// console.log(newNumbers)
 
-// 3) Re-assign
-// var x = 5;
+// Filter
+// let newNumbers = numbers.filter((num) => {
+//   return num > 3;
+// });
 
-// x = 6; => 6
+// console.log(newNumbers);
 
-// let x = 5;
+// Find
+// let newNumbers = numbers.find((num) => {
+//   return num <= 2;
+// });
 
-// x = 6; => 6
+// console.log(newNumbers);
 
-// const x = 5;
+// Some - Every
+// const numbers = [35, 40, 30, 24];
 
-// x = 6; => Error
+// const newNumbers = numbers.some((item) => item < 25);
+// const newNumbers = numbers.some((item) => item > 25);
 
-// console.log(x);
-
-// const x = 5;
-
-// x = 6;
-
-// const user = { name: "Kareem", age: 24 };
-
-// user.name = "Ahmed";
-
-// user.address = "Egypt";
-
-// user = { name: "Kareem", age: 24, address: "Egypt" }; => Error
-
-// { name: "Kareem", age: 24 }
-
-// { name: "Kareem", age: 24, address: "Egypt" }
-
-// user = { name: "Ahmed", age: 24 };
-
-// console.log(user);
-
-/** Arrow function */
-// Regular
-// function sum(a, b) {
-//   console.log(a + b);
-// }
-
-// Anonymous
-// const sum = function (a, b) {
-//   console.log(a + b);
-// };
-
-// Arrow
-// const sum = _ => console.log("Kareem");
-
-// sum(5);
-
-/** Template Literals */
-
-// let name = "Kareem Gamal";
-// let name = "Kareem";
-
-// let age = 25;
-// Concat
-// console.log("Welcome" + " " + name + " " + "Your age is " + age);
-
-// Template Literals
-// console.log(`Welcome ${name}, Your age is ${age}`);
-
-/** Default Parameters */
-// const showName = (name = "Kareem", age, address = "Egypt") => {
-//   console.log(`Hello, ${name}, age: ${age}, address: ${address}`);
-// };
-
-// showName(undefined, 15);
-// undefined => قيمة غير موجودة
-// null => قيمة فارغة
-
-/** Object Shorthand */
-// const name = "Kareem",
-//   age = 25;
-
-// const user = {
-//   name,
-//   age,
-// };
-
-// console.log(user);
-
-/** Ternary Operator */
-// let score = 80;
-
-// let result;
-
-// if (score >= 50 && score < 90) {
-//   console.log("Pass");
-// } else if (score >= 90 && score < 100) {
-//   console.log("Excellent");
-// } else if (score >= 100) {
-//   console.log("So Good");
-// } else {
-//   console.log("Fail");
-// }
-
-// score >= 50 && score < 90
-//   ? console.log("Pass")
-//   : score >= 90
-//     ? console.log("Excellent")
-//     : score >= 100
-//       ? console.log("So Good")
-//       : console.log("Fail");
-
-// if (score >= 50 && score < 90) {
-//   console.log("Pass");
-// }
-
-// score >= 50 && score < 90 ? console.log("Pass") : null;
-
-/**
- * Let, var and const with scopes
- * Nullish operator
- * Arrow functions
- */
+// console.log(newNumbers);
