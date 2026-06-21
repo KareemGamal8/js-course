@@ -1,65 +1,99 @@
-/** ================ High Order Functions (HOF) ================ **/
-/**
- * map()
- * forEach()
- * filter()
- * find()
- * some()
- * every
- */
+let allButton = document.getElementById("all");
+let electronicsButton = document.getElementById("electronics");
+let clothesButton = document.getElementById("clothes");
+let productsEl = document.getElementById("products");
 
-// Map
-let numbers = [1, 2, 3, 4, 5, 6];
+const products = [
+  {
+    id: 1,
+    title: "Laptop",
+    price: 25000,
+    category: "electronics",
+    image: "https://picsum.photos/200?1",
+  },
+  {
+    id: 2,
+    title: "Phone",
+    price: 15000,
+    category: "electronics",
+    image: "https://picsum.photos/200?2",
+  },
+  {
+    id: 2,
+    title: "PC",
+    price: 2000,
+    category: "electronics",
+    image: "https://picsum.photos/200?2",
+  },
+  {
+    id: 3,
+    title: "T-Shirt",
+    price: 500,
+    category: "clothes",
+    image: "https://picsum.photos/200?3",
+  },
+  {
+    id: 4,
+    title: "Jeans",
+    price: 1200,
+    category: "clothes",
+    image: "https://picsum.photos/200?4",
+  },
+  {
+    id: 5,
+    title: "Jeans 2",
+    price: 1400,
+    category: "clothes",
+    image: "https://picsum.photos/200?4",
+  },
+];
 
-let newNumbers = numbers.map((num) => {
-  return num * 2;
+function showProducts(arr) {
+  productsEl.innerHTML = arr
+    .map((item, index) => {
+      return `
+       <div class="card">
+        <img src=${item.image} alt={${item.title}} />
+        <h3>${item.title}</h3>
+        <p>${item.price} EGP</p>
+        <span>${item.category}</span>
+      </div>`;
+    })
+    .join("");
+}
+
+// Show all products (map)
+showProducts(products);
+
+// Filter by Category
+electronicsButton.addEventListener("click", () => {
+  let filterProducts = products.filter((item, index) => {
+    return item.category === "electronics";
+  });
+
+  showProducts(filterProducts);
 });
 
-console.log(newNumbers);
+clothesButton.addEventListener("click", () => {
+  let filterProducts = products.filter((item, index) => {
+    return item.category === "clothes";
+  });
 
-// const usersDiv = document.getElementById("users");
+  showProducts(filterProducts);
+});
 
-// const users = [
-//   { id: 1, name: "Ali" },
-//   { id: 2, name: "Ahmed" },
-//   { id: 3, name: "Kareem" },
-// ];
+allButton.addEventListener("click", () => {
+  showProducts(products);
+});
 
-// usersDiv.innerHTML = users.map((user, index) => {
-//   return `
-//     <div key={${index}>
-//         <h2>${user.id}</h2>
-//         <h2>${user.name}</h2>
-//         <p></p>
-//     </div>
-//     `;
-// });
+const numbers = [10, 20, 30, 12, 7, 32];
 
-// forEach
-// const newNumbers = numbers.forEach((num, index) => {
-//   return num * 3;
-// });
+const result = numbers.map((number) => {
+  if (number > 15) {
+    return number;
+  }
+});
 
-// console.log(newNumbers)
+[undefined, 20, 30];
 
-// Filter
-// let newNumbers = numbers.filter((num) => {
-//   return num > 3;
-// });
-
-// console.log(newNumbers);
-
-// Find
-// let newNumbers = numbers.find((num) => {
-//   return num <= 2;
-// });
-
-// console.log(newNumbers);
-
-// Some - Every
-// const numbers = [35, 40, 30, 24];
-
-// const newNumbers = numbers.some((item) => item < 25);
-// const newNumbers = numbers.some((item) => item > 25);
-
-// console.log(newNumbers);
+console.log(result);
